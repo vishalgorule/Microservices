@@ -1,0 +1,306 @@
+2021-08-29 14:55:38 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 8404 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 14:55:38 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 14:55:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.166 seconds (JVM running for 6.044)
+2021-08-29 14:55:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 14:55:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 15:57:39 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 3676 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 15:57:39 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 15:57:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.022 seconds (JVM running for 5.288)
+2021-08-29 15:57:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 15:57:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 15:57:41 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-08-29 15:57:41 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 15:57:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-08-29 15:57:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-08-29 15:57:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @digithealthport: 😱 #AugmentedReality will change the way we study Math
+
+#Mathematics #ML #AI #MachineLearning #DataScience #rstats #Jav…
+2021-08-29 15:57:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text i have been pursuing the spring of my life. when you smile, it is. #XiXianXGulfNiceScent
+2021-08-29 15:57:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @caffeinepatches: "and so the spring buds, and so I gaze, and so the blossoms fall, and so my days." -Onitsura
+
+#klance #vld #keith #lan…
+2021-08-29 15:57:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @seokjinmylabsss: kim seokjin spring day choreo will be forever remain iconic 
+https://t.co/Axad937w2k
+2021-08-29 15:57:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Inno_keigh2: We were supposed to be welcoming Spring and not Summer kodwa Winter aifuni uguhamba😭😭yii it's cold outside fokof 🥶🥶
+2021-08-29 15:57:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @digithealthport: 😱 #AugmentedReality will change the way we study Math
+
+#Mathematics #ML #AI #MachineLearning #DataScience #rstats #Jav…
+2021-08-29 15:57:53 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @rumic_goods: 【交換/譲渡】A3! ホログラム缶バッジ ～Happy×3 Birthday Spring Troupe!〜 BD
+
+譲：至4、シトロン4
+
+求：真澄3、千景2 ＞ 定価3
+
+至は希望数集まるまでシトロンと合わせてのみ。
+郵送優先、都内手渡し可…
+2021-08-29 15:57:53 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @janodo36: @domdyer70 Ofcourse the minister himself is more the “odious man” - probably sailed through privileged life, can’t tolerate c…
+2021-08-29 15:57:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @seokjinmylabsss: kim seokjin spring day choreo will be forever remain iconic 
+https://t.co/Axad937w2k
+2021-08-29 15:57:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @MizzimaNews: #Spring Revolution Daily News for 29 August 2021 | Mizzima #Myanmar News and Insight https://t.co/PkoeErABFP
+-------------…
+2021-08-29 15:57:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text New post (Osklen Spring/Summer 2013 Runway Show | New York Fashion Week NYFW | FashionTV) has been published on News, Information And..... - https://t.co/ey89n9QkIt https://t.co/2CelIAw1bs
+2021-08-29 15:58:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @asolitarypagan: https://t.co/hF5wasR7zx
+
+Beltane
+
+Also: May Day, Walpurgis, Roodmas
+
+Beltane, celebrated at the peak of spring around e…
+2021-08-29 15:58:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #KyawMoeTunRepresentsMyanmar #Aug29Coup  #WhatsHappeningInMyanmar
+2021-08-29 15:58:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text だるぷろっぺJAVA版配布マップ第一弾「ボートレース！」
+
+簡単すぎるよや難しいという方用。地図前にあるトラップドアを開きます。中にコマンドブロックがあるので画像黄色文字の数値を変更してください。
+（150→難しい80～200簡単）このくらいが推奨です。 https://t.co/71tvGzaOlh
+2021-08-29 15:58:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @binman18691753: @PhilMyers53 I want #johnsonout however Tories will use the lack of a progressive alliance and weakness in Labour to ca…
+2021-08-29 15:58:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @fxbullnblanch: ก็ไหนคุนพี่ว่าไม่แคร์ไงคะหื้ม 😌 #เจนนิเฟอร์คิ้ม https://t.co/laJNlvMTtb
+2021-08-29 15:58:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @_TrashySoya: (SELL) Another set of Otoge I'm currently selling is Yunohana Spring Limited edition including the first game and the sequ…
+2021-08-29 15:58:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 3/ Next We've added smarts to our code compiler to auto-detect snippet input. The app will now ask for input via. a dialog. This works across most of the languages including Javascript, Python 3, Go, Java, Swift, Lua, Ruby, Rust, C, C++, C# & Perl. Exhibit ⬇ https://t.co/po0K8iBqTw
+2021-08-29 15:58:11 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2021-08-29 17:07:18 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 12396 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:07:18 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:07:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.799 seconds (JVM running for 4.432)
+2021-08-29 17:07:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:07:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:07:20 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:07:20 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Unexpected date format(1303074545821752762) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:93)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.text.ParseException: Unparseable date: "1303074545821752762"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 11 common frames omitted
+2021-08-29 17:09:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 9224 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:09:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:09:50 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.014 seconds (JVM running for 4.826)
+2021-08-29 17:09:50 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:09:50 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:09:50 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:09:50 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Unexpected date format(9097223216444909027) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:93)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.text.ParseException: Unparseable date: "9097223216444909027"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 11 common frames omitted
+2021-08-29 17:23:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 7588 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:23:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:23:18 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.383 seconds (JVM running for 5.595)
+2021-08-29 17:23:18 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:23:18 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:23:18 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:23:18 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Unexpected date format(8783885847644906299) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:93)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.text.ParseException: Unparseable date: "8783885847644906299"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 11 common frames omitted
+2021-08-29 17:24:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 11580 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:24:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:24:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.289 seconds (JVM running for 4.894)
+2021-08-29 17:24:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:24:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:24:55 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:24:55 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Unexpected date format(4961748369880737027) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:93)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.text.ParseException: Unparseable date: "4961748369880737027"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 11 common frames omitted
+2021-08-29 17:30:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 7112 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:30:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:30:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.017 seconds (JVM running for 6.03)
+2021-08-29 17:30:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:30:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:30:33 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:30:33 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Unexpected date format(8628897142004651753) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:115)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:94)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:86)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:102)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:93)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.text.ParseException: Unparseable date: "8628897142004651753"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:395)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:113)
+	... 11 common frames omitted
+2021-08-29 17:45:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 7468 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:45:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:45:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.744 seconds (JVM running for 4.189)
+2021-08-29 17:45:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:45:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:45:21 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:45:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 7816 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:45:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:45:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.603 seconds (JVM running for 5.254)
+2021-08-29 17:45:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:45:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:45:48 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:50:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 10908 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:50:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:50:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.033 seconds (JVM running for 3.302)
+2021-08-29 17:50:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:50:22 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:50:22 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:50:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 5192 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:50:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:50:49 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.05 seconds (JVM running for 4.575)
+2021-08-29 17:50:49 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:50:49 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:50:49 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-08-29 17:50:49 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:50:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-08-29 17:50:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-08-29 17:50:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Java＆統合版の鯖で新しくワールドつくちゃった https://t.co/LDXms4uUNd
+2021-08-29 17:51:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 1.12.2と1.17のサーバー切り得る際、
+一々javaパスを変更するのがめんどい
+2021-08-29 17:51:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TingKrSeriesLv: เรื่องย่อ + รีวิว 
+
+#YouAreMySpring 
+
+รอมคอม ฟีลกู้ด
+
+เพราะความสัมพันธ์ที่ดี
+ช่วยให้เราก้าวผ่านเหตุการณ์เลวร้ายในอดีต…
+2021-08-29 17:51:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @davidmweissman Good morning! I went cold caffeine to start. Java later.
+2021-08-29 17:51:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Beautiful
+2021-08-29 17:51:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Vitt2TsNoC: Food shop this morning. Can't get lemons, chillis, parsley, spring onions, aubergines, cumin, almonds, bottled water, beans…
+2021-08-29 17:51:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ❗ランキング:10位❗ (ナイト＆週末セール)
+
+「IdeaPad L350 (15.6/ i5-10210U/ 8GB/ 256GB/ Win10Home/ アビスブルー)  81Y300KAJP」
+メーカ:Lenovo
+
+価格:¥64,800(21:21)
+
+https://t.co/4BeCLGOPia
+2021-08-29 17:51:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @txm1971 @mediauj @ujfm @UJLibrary F=-k.X use your toes as a spring constant. Let them absorb your weight, then bounce back up. 
+Using your heals causes strain on your knees because of the resistance of your body to change its state if downward motion “inertia”. 
+
+But all in all great job.👏🏽
+2021-08-29 17:51:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @seokjinmylabsss: kim seokjin spring day choreo will be forever remain iconic 
+https://t.co/Axad937w2k
+2021-08-29 17:51:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ❗ランキング：10位❗ (電源パーツ)
+
+「電源ユニット Smart 350W STANDARD PS-SPD-0350NPCWJP-W」
+メーカ:Thermaltake
+
+価格:¥3,806(21:21)
+
+https://t.co/Bd6falGRst
+2021-08-29 17:51:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @highendhomo: kate moss @ calvin klein, spring 1993 https://t.co/gwUlDjrKwm
+2021-08-29 17:51:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @oocderrygirIs: https://t.co/QUcVDxHlH9
+2021-08-29 17:51:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @uplandturkey: Top story: @HaroldSinnott: '💥 History of coding! 
+
+@Veracode 
+#AI #MachineLearning #DataScience #Coding #Infosec #100Days…
+2021-08-29 17:51:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @DeeDeeDaDelisus: She says Happy Easter Bunny Day to everyone !   I know I feel like a bunny in the spring time on a full moon night ! h…
+2021-08-29 17:51:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 올해 d올 ss시즌 오뜨 꾸뛰르 컬렉션 같이 spring out에 컨셉 받아서 현대+스팀펑크로 같이 디자인 한 옷들 만들고 거기다가 박문대 입혀줘 한국인인데 서양 중세 잘어울리고 명화 같은 시즌 사진 이제 공개 됬는데 사람들 술렁술렁 하고 뉴스 나올때 부터 박문대 명품브랜드 됬다 해서
+2021-08-29 17:51:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @bangtannie_03 spring day
+2021-08-29 17:51:10 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #flutterdeveloper #coding #programmer #flutterdev #appdeveloper #kotlin #reactnative #java #coder #daysofcode #dart #appdevelopment #innovation #freeconsultation #CEO #CTO #mobile #mobility #FlutterDevs
+2021-08-29 17:51:10 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @itou34: きっと優しい春の歌
+
+#art #artwork #painting #アート #美術 #絵 #絵画 #油彩画
+#botanical #flower #ボタニカル #植物 #花 #菜の花
+#light #光
+#spring #春 https://t.co…
+2021-08-29 17:51:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text https://t.co/SYEaV9PPOO omg FINALLY
+2021-08-29 17:51:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text -rek beli vietnamese spring roll nandi yo nang sby?
+2021-08-29 17:51:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @GUYPRESS You're right, it's not democracy. No Western Values countries are. But I've said with all the protests since this spring in London, no one has had the idea to steer a couple tens of thousands towards Belmarsh to demand a release of #JulianAssange ?
+Bigly disappointed
+2021-08-29 17:51:11 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2021-08-29 17:51:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 8084 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:51:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:51:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.049 seconds (JVM running for 4.685)
+2021-08-29 17:51:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:51:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:51:35 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:53:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 7860 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:53:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:53:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.105 seconds (JVM running for 4.625)
+2021-08-29 17:53:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:53:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:53:07 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:53:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 11532 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:53:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:53:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.026 seconds (JVM running for 4.567)
+2021-08-29 17:53:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:53:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:53:28 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:58:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 11956 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 17:58:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 17:58:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.047 seconds (JVM running for 4.629)
+2021-08-29 17:58:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 17:58:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:58:14 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 17:58:14 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit ultricies libero massa Elasticsearch lectus adipiscing
+2021-08-29 17:58:24 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet pulvinar libero libero sit magna posuere Microservices pulvinar libero lectus elit congue posuere
+2021-08-29 18:00:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 10364 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 18:00:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 18:00:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.198 seconds (JVM running for 4.767)
+2021-08-29 18:00:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 18:00:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 18:00:35 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 18:00:35 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus malesuada lectus massa lectus Lorem sed Microservices magna ipsum lectus Fusce consectetuer
+2021-08-29 18:00:45 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero ultricies magna adipiscing Spring massa sed
+2021-08-29 18:00:55 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit adipiscing malesuada consectetuer Fusce libero purus Spring posuere Lorem libero pulvinar porttitor massa
+2021-08-29 18:01:05 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas dolor magna Fusce Lorem massa porttitor Elasticsearch ultricies magna elit porttitor massa
+2021-08-29 20:19:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on Vishal with PID 8604 (E:\MicroservicesHandsOn\microservices-demo\twitter-to-kafka-service\target\classes started by VISHAL in E:\MicroservicesHandsOn\microservices-demo)
+2021-08-29 20:19:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-29 20:19:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.372 seconds (JVM running for 6.271)
+2021-08-29 20:19:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-08-29 20:19:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 20:19:14 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Starting to Mock filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-29 20:19:14 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada pulvinar amet adipiscing sed massa dolor purus Microservices libero ipsum libero Lorem ipsum amet malesuada
+2021-08-29 20:19:24 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa sit porttitor libero sed Lorem Java posuere Lorem Fusce consectetuer
