@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/vishalgorule/spring-cloud-config-server
+          default-label: main
+          username: vishalgorule
+          password: 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
+          clone-on-start: true
+    fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: ENC(H2/ZhjbajPl78b4PI/ZXf6P5GgxZtdZYyc+qJWGko/9OEAq7g8f7mAqfHEf/fgc9)
+
+
