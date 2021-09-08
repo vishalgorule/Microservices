@@ -8,7 +8,7 @@ spring:
           uri: https://github.com/vishalgorule/spring-cloud-config-server
           default-label: main
           username: vishalgorule
-          password: '{cipher}fdffb887f8127ab35ae74126bcfd4b305a2f1f6b7c0057069e8aced14b2ec880017c9a576a55740b7b888bb007115ecc7af28e0a2f17ef2ef7c3468388c6e82a'
+          password: '{cipher}8e22d5a781d353061ed0b58b7ca5b049b5b73596f4c5c9fe0d5a424b6a1d21934cf56643716d2f2970502bed5f809d76e776e48ebdb16939ba7fef8ee5c03264'
           clone-on-start: true
     fail-fast: true
   security:
