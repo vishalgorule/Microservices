@@ -8,12 +8,12 @@ spring:
           uri: https://github.com/vishalgorule/spring-cloud-config-server
           default-label: main
           username: vishalgorule
-          password: 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
+          password: '{cipher}fdffb887f8127ab35ae74126bcfd4b305a2f1f6b7c0057069e8aced14b2ec880017c9a576a55740b7b888bb007115ecc7af28e0a2f17ef2ef7c3468388c6e82a'
           clone-on-start: true
     fail-fast: true
   security:
     user:
       name: spring_cloud_user
-      password: ENC(H2/ZhjbajPl78b4PI/ZXf6P5GgxZtdZYyc+qJWGko/9OEAq7g8f7mAqfHEf/fgc9)
+      password: '{cipher}ceed0d59798179b6899fa192ff07c66d4982d5259d03327107069112bc39fbdc'
 
 
