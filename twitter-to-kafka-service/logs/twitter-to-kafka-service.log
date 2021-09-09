@@ -217,3 +217,368 @@ No puedo hacer que nadie entienda lo que está sucediendo dentro de mí. Ni siqu
 2021-09-09 00:50:17 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
 2021-09-09 00:50:17 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
 2021-09-09 00:50:17 [SpringApplicationShutdownHook] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
+2021-09-09 02:15:19 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2021-09-09 02:15:19 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2021-09-09 02:15:19 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-09-09 02:15:19 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource commandLineArgs [org.springframework.core.env.SimpleCommandLinePropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-09-09 02:15:19 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-09-09 02:15:19 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-09-09 02:15:19 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-09-09 02:15:19 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2021-09-09 02:15:19 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-09-09 02:15:19 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [bootstrap.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-09-09 02:15:19 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-09-09 02:15:19 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-09-09 02:15:19 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-09-09 02:15:20 [main] INFO  c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on EnvironmentChangeEvent
+2021-09-09 02:15:20 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source commandLineArgs refreshed
+2021-09-09 02:15:20 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
+2021-09-09 02:15:20 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
+2021-09-09 02:15:20 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
+2021-09-09 02:15:20 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source cachedrandom refreshed
+2021-09-09 02:15:20 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source springCloudClientHostInfo refreshed
+2021-09-09 02:15:20 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [bootstrap.yml]' via location 'optional:classpath:/' refreshed
+2021-09-09 02:15:20 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource decrypted [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-09-09 02:15:20 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2021-09-09 02:15:20 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.cloud.bootstrap.BootstrapApplicationListener$ExtendedDefaultPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-09-09 02:15:21 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2021-09-09 02:15:23 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-to-kafka-service,config-client, profiles=[twitter_to_kafka], label=null, version=f2f14ba197dabe1d5aeea7cb248dac81872a77d1, state=null
+2021-09-09 02:15:23 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/vishalgorule/spring-cloud-config-server/config-client-twitter_to_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/vishalgorule/spring-cloud-config-server/config-client.yml'}]
+2021-09-09 02:15:23 [main] INFO  c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on EnvironmentChangeEvent
+2021-09-09 02:15:23 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source commandLineArgs refreshed
+2021-09-09 02:15:23 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
+2021-09-09 02:15:23 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
+2021-09-09 02:15:23 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
+2021-09-09 02:15:23 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source cachedrandom refreshed
+2021-09-09 02:15:23 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source springCloudClientHostInfo refreshed
+2021-09-09 02:15:23 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [bootstrap.yml]' via location 'optional:classpath:/' refreshed
+2021-09-09 02:15:23 [main] INFO  c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source springCloudDefaultProperties refreshed
+2021-09-09 02:15:23 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource decrypted [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-09-09 02:15:23 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2021-09-09 02:15:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - The following profiles are active: twitter_to_kafka
+2021-09-09 02:15:26 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3e28a2f8-c782-3ecc-a325-0bae0e8e74fa
+2021-09-09 02:15:26 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource decrypted [org.springframework.core.env.SystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource commandLineArgs [org.springframework.core.env.SimpleCommandLinePropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-configClient [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-https://github.com/vishalgorule/spring-cloud-config-server/config-client-twitter_to_kafka.yml [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-09-09 02:15:26 [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource bootstrapProperties-https://github.com/vishalgorule/spring-cloud-config-server/config-client.yml [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2021-09-09 02:15:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-09 02:15:27 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2021-09-09 02:15:27 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2021-09-09 02:15:27 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2021-09-09 02:15:28 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-09-09 02:15:28 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2021-09-09 02:15:28 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2021-09-09 02:15:28 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1631133928754
+2021-09-09 02:15:29 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7901d642-1a9d-4bf2-aea6-ead5a7a4066d
+
+2021-09-09 02:15:30 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080
+2021-09-09 02:15:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 14.99 seconds (JVM running for 19.804)
+2021-09-09 02:15:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-09-09 02:15:30 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2021-09-09 02:15:30 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topics [twitter-topic], attempts 0
+2021-09-09 02:15:33 [reactor-http-epoll-3] INFO  c.m.d.k.a.client.KafkaAdminClient - Successful response from schema registry
+2021-09-09 02:15:33 [main] INFO  c.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2021-09-09 02:15:33 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-09-09 02:15:33 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-09-09 02:15:34 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-09-09 02:15:34 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-09-09 02:15:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Cocadope: got this swaggy shit in the mail and its comfy a/f
+https://t.co/0KTlsix5Eg https://t.co/1nzWb3h9p9 sending to kafka topic twitter-topic
+2021-09-09 02:15:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @paperwritingpr: Partner with us to help you get top scores in your academic papers
+#Spring classes
+#Statistics
+#Literature 
+#Nursing
+#B… sending to kafka topic twitter-topic
+2021-09-09 02:15:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @APSsaferoutes , @arlingtondes - let's do this! sending to kafka topic twitter-topic
+2021-09-09 02:15:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @kkyualae: i love junyu's beautiful smile which brings positive vibes to anyone who sees it, he is a person who has a bright smile, as b… sending to kafka topic twitter-topic
+2021-09-09 02:15:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Siir_Sokaktadir: Delirmenin eşiğindeyim.
+
+Franz Kafka sending to kafka topic twitter-topic
+2021-09-09 02:15:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ankoukan: あんスタ イベコレ缶バッジ 2020 winter 交換 譲渡
+譲
+casual
+奏汰 翠 宗  みか 紅郎
+summer
+idol レオ アドニス
+spring
+idol ☆一彩 マヨイ 忍
+求
+idol
+茨 こはく＞ ひなた ゆうた 春 c凪砂1… sending to kafka topic twitter-topic
+2021-09-09 02:15:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text I switched to handwriting this spring when it was too painful to look at screens. Unexpected benefits: the physicality is enjoyable, I am less likely to open Twitter when I get stuck on a scene, it is easier to have a cat in my lap while writing in a notebook than on a laptop sending to kafka topic twitter-topic
+2021-09-09 02:15:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Cocadope: got this swaggy shit in the mail and its comfy a/f
+https://t.co/0KTlsix5Eg https://t.co/1nzWb3h9p9 sending to kafka topic twitter-topic
+2021-09-09 02:15:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @yokoono: CLOUD PIECE
+Imagine the clouds dripping.
+Dig a hole in your garden to
+put them in.
+
+1963 spring
+
+Installation view: MOT Tokyo,… sending to kafka topic twitter-topic
+2021-09-09 02:15:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Army_Connect: .@BTS_twt said #Butter is 'Song of Four Seasons.' https://t.co/QVP8dQpJ4M sending to kafka topic twitter-topic
+2021-09-09 02:15:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:52 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @jaidatruck spring loaded sending to kafka topic twitter-topic
+2021-09-09 02:15:53 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Cocadope: got this swaggy shit in the mail and its comfy a/f
+https://t.co/0KTlsix5Eg https://t.co/1nzWb3h9p9 sending to kafka topic twitter-topic
+2021-09-09 02:15:53 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Army_Connect: .@BTS_twt said #Butter is 'Song of Four Seasons.' sending to kafka topic twitter-topic
+2021-09-09 02:15:53 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text kiss me like Moblit Berner kissed Connie Spring sending to kafka topic twitter-topic
+2021-09-09 02:15:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text #TheTempest 3 is back on the agenda along with #Fury and potentially another episode. As of now the plan is to have a short for Vanguard if all goes well. #TheTempest 3 trailer will hopefully be released early spring 2022 with the final episode of Revolution releasing in the fall sending to kafka topic twitter-topic
+2021-09-09 02:15:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @LiteraturayMas_: "No puedo hacerte entender.
+No puedo hacer que nadie entienda lo que está sucediendo dentro de mí. Ni siquiera puedo e… sending to kafka topic twitter-topic
+2021-09-09 02:15:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @bernhardsson protobuf + kafka is common enough I think sending to kafka topic twitter-topic
+2021-09-09 02:15:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @AndAwayTheyJoe Spring racing here in Oz 🍿 sending to kafka topic twitter-topic
+2021-09-09 02:15:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:15:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text We've tried everything: Masks, distancing, even lockdowns & the virus keeps roaring back. Vaccines are our best way back to normal. If we get >90% vaccination coverage in the US we may well start to control the virus by the Spring. sending to kafka topic twitter-topic
+2021-09-09 02:15:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @WPLGLocal10: IS MIAMI TURNING INTO NEW YORK? Adding to the unofficial fact that Miami is turning into New York City's sixth borough is… sending to kafka topic twitter-topic
+2021-09-09 02:15:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:16:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text PictureThis: Identifica tus plantas al instante.
+https://t.co/kuHQeFEr6O sending to kafka topic twitter-topic
+2021-09-09 02:16:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:16:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @wannartcom: "Odamda günlerdir yalnızım, ziyanı yok dünyada da yıllarca yalnız değil miydim?"
+
+-Dönüşüm, Franz Kafka https://t.co/xWLHcY… sending to kafka topic twitter-topic
+2021-09-09 02:16:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @skafka15: みんなーーー！！
+ついに！！！！！
+単行本化！！！！
+するよ！！！！！ sending to kafka topic twitter-topic
+2021-09-09 02:16:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Transfer the work load on to us.
+Spring class
+Math pay
+Exam
+Finance
+Stats
+Assignment
+Homework
+Excel
+economics
+Physics
+Project
+Chemistry
+Test
+Biology
+History
+English
+Essay
+Online class
+please dm https://t.co/tniOLnnYoh sending to kafka topic twitter-topic
+2021-09-09 02:16:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text #Gaming Fortnite gamer's mum becomes pro herself - BBC News https://t.co/x6F9zsJTES >> #playstation #nintendo #xboxone #pcgaming #Esports #twitch #gamedev #indiegames #coding #java #python sending to kafka topic twitter-topic
+2021-09-09 02:16:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Cocadope: got this swaggy shit in the mail and its comfy a/f
+https://t.co/0KTlsix5Eg https://t.co/1nzWb3h9p9 sending to kafka topic twitter-topic
+2021-09-09 02:16:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ntchkwrld: Thierry Mugler Spring 1998 https://t.co/PTdC1fzryW sending to kafka topic twitter-topic
+2021-09-09 02:16:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @OlivyaEssays: Grade A+ assured in any timed paper
+#Fall semester 
+
+#Pay write
+
+#javascript
+
+#Online class take
+
+#Philosophy 
+
+#Chemistr… sending to kafka topic twitter-topic
+2021-09-09 02:16:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:16:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @kafkakitapp: Kirli bir camdan bakıp herkesi ve her şeyi kirli sanıyorsunuz.
+
+Franz Kafka sending to kafka topic twitter-topic
+2021-09-09 02:16:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:16:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Aysima_tuna: Kirli bir camdan bakıp herkesi ve her şeyi kirli sanıyorsunuz.” O yüzden bakış açınızı değiştirmeyi deneyin. (Franz Kafka)… sending to kafka topic twitter-topic
+2021-09-09 02:16:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:16:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text The new canal in my extension of the Ninjago City Gardens, between the Spring Lantern Festival park and the pillars of the monorail. https://t.co/x0sdOHfwY9 sending to kafka topic twitter-topic
+2021-09-09 02:16:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ランキング:26位「ホーム＆キッチン」(05:46)
+
+貝印 KAI キッチンはさみ 料理家の逸品 カーブ 日本製 DH2501 & KAI うろこ
+
+価格:￥506 - ￥3,775
+レビュー数:1,509
+https://t.co/yE8gERaDw5 sending to kafka topic twitter-topic
+2021-09-09 02:16:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Secure good grades with us 
+Fall class
+Spring semester
+Finance
+English
+History
+Math pay
+Statistics 
+Accounting
+Python
+Nursing.
+Essay due.
+Assignment
+python
+javascript
+Online class
+research paper
+Psychology
+#100DaysOfCode
+#WomenWhoCode
+Dm @Owriter75 https://t.co/itNqGeOhuf sending to kafka topic twitter-topic
+2021-09-09 02:16:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:16:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @PDH_SciTechNews: #Gaming Fortnite gamer's mum becomes pro herself - BBC News https://t.co/x6F9zsJTES >> #playstation #nintendo #xboxone… sending to kafka topic twitter-topic
+2021-09-09 02:16:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:16:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @EWinstn: @POTUS Retweet if you need this shirt
+
+👉https://t.co/L0rbUqXpQc https://t.co/O1l1vjjTYE sending to kafka topic twitter-topic
+2021-09-09 02:16:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bts_bighit: We're all celebrating "Butter (feat. Megan Thee Stallion)" #1 on HOT100 🎉💛
+Listen now and let's take over every spring, sum… sending to kafka topic twitter-topic
+2021-09-09 02:16:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Cocadope: got this swaggy shit in the mail and its comfy a/f
+https://t.co/0KTlsix5Eg https://t.co/1nzWb3h9p9 sending to kafka topic twitter-topic
+2021-09-09 02:16:10 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text un bat de beisbol-
+Los demás: Bonnnnn
+Spring: Hermano bota eso que tienes en la espalda.
+Bon: Esta bien, esta bien-bota un cuchillo-
+Los demás: ¡Bonnn!
+Joy: Halgo más tienes.
+Meg: Botalo ya!
+Bon:-saca una pistola- *los demás se asustan*, es de fogueo, es de fogueo, es pa' sending to kafka topic twitter-topic
+2021-09-09 02:16:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @zizonpacifiste Ahh ptn moi j’aurais pu aller au java ou avec toi wsh ma mère Ella a dit oui sending to kafka topic twitter-topic
+2021-09-09 02:16:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text It's that time of year! Here is your September to-do list! Tackle these chores to prep your home for the cooler months ahead to ensure comfort and a smooth winter to spring transition in the new year! 😊 ✅📲 https://t.co/cxZZDslg47 #YYC #Calgary #YYCRE #YYCnow #YYClocal sending to kafka topic twitter-topic
+2021-09-09 02:16:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text "My cellphone is the latest one! If I push a button of # 1,nameko mushrooms would spring from a screen."
+谷地「私の携帯は最新式です！1を押すと画面からナメコが出ます！」 sending to kafka topic twitter-topic
+2021-09-09 02:16:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Galaxyy_Lol: Still connected to @boavistaesports  but i am allowed to explore offers for the 2021 Winter Split / 2022 Spring Split.
+
+Re… sending to kafka topic twitter-topic
+2021-09-09 02:16:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Owriter75: Secure good grades with us 
+Fall class
+Spring semester
+Finance
+English
+History
+Math pay
+Statistics 
+Accounting
+Python
+Nursin… sending to kafka topic twitter-topic
+2021-09-09 02:16:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @RealTarjeija: @ShillinNFTs 1/1 MUSIC NFT No. 89 - 10th Gen SPRING RUNNER - Nerth
+ 
+0.02 ETH
+ 
+https://t.co/H1YSE1nFm2 https://t.co/1Dge… sending to kafka topic twitter-topic
+2021-09-09 02:16:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @RIANARI47746040: 💕💓🌿🌿💕💕 sending to kafka topic twitter-topic
+2021-09-09 02:16:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text I read books 1-11 plus New Spring in the 2005-2006 school year sending to kafka topic twitter-topic
+2021-09-09 02:16:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Zeezzoro: 🍆🍆SPRING PUSSY🍆🍆
+MILK🥛LATTE 
+Video drops tomorrow August 20th 2021 
+Subscribe now to watch 
+Available on my onlyfans and
+Just… sending to kafka topic twitter-topic
+2021-09-09 02:16:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Congrats to 2021 @HoustonPress Best Family Friendly Restaurant @FegesBBQ Spring Branch! 
+https://t.co/slSkejtHbQ
+
+#EatLocal #SpringBranchDistrict sending to kafka topic twitter-topic
+2021-09-09 02:16:17 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text #IoT Realtek 2.5Gb Ethernet controller & Wi-Fi 6 equipped with Dragon smart bandwidth optimization technology - PRNewswire https://t.co/Bc7rnlyOLG >> #InternetofThings #IIoT #ai #robotics #coding #java #python sending to kafka topic twitter-topic
+2021-09-09 02:16:18 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2021-09-09 02:16:18 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2021-09-09 02:16:18 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-09-09 02:16:18 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2021-09-09 02:16:18 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2021-09-09 02:16:18 [SpringApplicationShutdownHook] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
