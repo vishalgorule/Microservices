@@ -9,11 +9,15 @@
 		<module>kafka/kafka-model</module>
 		<module>kafka/kafka-admin</module>
 		<module>kafka/kafka-producer</module>
+		<module>kafka/kafka-consumer</module>
 		<module>common-config</module>
         <module>config-server</module>
-		<module>kafka-consumer</module>
         <module>kafka-to-elastic-service</module>
-    </modules>
+        <module>elastic</module>
+		<module>elastic/elastic-config</module>
+		<module>elastic/elastic-model</module>
+		<module>elastic/elastic-index-client</module>
+	</modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -41,6 +45,8 @@
 		<spring-cloud-config>3.0.4</spring-cloud-config>
 		<spring-cloud-dependencies.version>2020.0.3</spring-cloud-dependencies.version>
 		<jasypt-spring.version>3.0.4</jasypt-spring.version>
+		<elastic-search.version>2.5.4</elastic-search.version>
+		<elastic-search-server.version>7.14.1</elastic-search-server.version>
 	</properties>
 
 	<repositories>
@@ -86,6 +92,24 @@
 			<dependency>
 				<groupId>com.microservices.demo</groupId>
 				<artifactId>kafka-consumer</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-model</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-config</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-index-client</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
@@ -175,6 +199,24 @@
 				<groupId>com.github.ulisesbocchio</groupId>
 				<artifactId>jasypt-spring-boot-starter</artifactId>
 				<version>${jasypt-spring.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+				<version>${elastic-search.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.elasticsearch</groupId>
+				<artifactId>elasticsearch</artifactId>
+				<version>${elastic-search-server.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.elasticsearch.client</groupId>
+				<artifactId>elasticsearch-rest-high-level-client</artifactId>
+				<version>${elastic-search-server.version}</version>
 			</dependency>
 
 			<dependency>
