@@ -29,9 +29,5 @@ public class TwitterIndexModel implements IndexModel {
     @JsonProperty
     private ZonedDateTime createdAt;
 
-    @Override
-    public String getId() {
-        return null;
-    }
 
 }

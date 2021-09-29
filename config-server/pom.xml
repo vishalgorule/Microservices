@@ -51,7 +51,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>${groupId}/${project.artifactId}:${project.version}</name>
+                        <name>${project.groupId}/${project.artifactId}:${project.version}</name>
                     </image>
                 </configuration>
                 <executions>

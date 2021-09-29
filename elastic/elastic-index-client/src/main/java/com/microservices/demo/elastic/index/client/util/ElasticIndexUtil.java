@@ -3,10 +3,12 @@ package com.microservices.demo.elastic.index.client.util;
 import com.microservices.demo.elastic.model.index.IndexModel;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 import org.springframework.data.elasticsearch.core.query.IndexQueryBuilder;
+import org.springframework.stereotype.Controller;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Controller
 public class ElasticIndexUtil<T extends IndexModel> {
 
     public List<IndexQuery> getIndexQueries(List<T> documents){

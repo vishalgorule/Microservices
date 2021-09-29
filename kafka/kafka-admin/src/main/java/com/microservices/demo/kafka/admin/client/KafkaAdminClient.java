@@ -83,6 +83,7 @@ public class KafkaAdminClient {
     }
 
     public void checkSchemaRegistry(){
+        LOG.info("Checking schema registry");
         int retryCount = 1;
         Integer maxRetry = retryConfigData.getMaxAttempts();
         Integer multiplier = retryConfigData.getMultiplier().intValue();
@@ -96,6 +97,7 @@ public class KafkaAdminClient {
 
     private HttpStatus getSchemaRegistryStatus(){
         try {
+            LOG.info("Getting schema registry status");
             return webClient
                     .method(HttpMethod.GET)
                     .uri(kafkaConfigData.getSchemaRegistryUrl())
