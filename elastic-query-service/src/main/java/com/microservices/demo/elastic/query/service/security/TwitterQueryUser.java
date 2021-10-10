@@ -15,7 +15,9 @@ import static com.microservices.demo.elastic.query.service.Constants.NA;
 public class TwitterQueryUser implements UserDetails {
 
     private String username;
+
     private Collection<? extends GrantedAuthority> authorities;
+
     private Map<String, PermissionType> permissions;
 
     public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
@@ -39,21 +41,21 @@ public class TwitterQueryUser implements UserDetails {
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return true;
     }
 }

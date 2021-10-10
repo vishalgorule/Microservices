@@ -28,7 +28,10 @@
         <module>elastic-query-web-client-2</module>
 		<module>kafka-streams-service</module>
 		<module>analytics-service</module>
-    </modules>
+        <module>discovery-service</module>
+		<module>gateway-service</module>
+		<module>mdc-interceptor</module>
+	</modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -57,13 +60,16 @@
 		<spring-cloud-dependencies.version>2020.0.3</spring-cloud-dependencies.version>
 		<jasypt-spring.version>3.0.4</jasypt-spring.version>
 		<elastic-search.version>2.5.4</elastic-search.version>
-		<elastic-search-server.version>7.12.1</elastic-search-server.version>
+		<elastic-search-server.version>7.13.4</elastic-search-server.version>
 		<springdoc-openapi.version>1.5.10</springdoc-openapi.version>
 		<thymeleaf-springsecurity.version>3.0.4.RELEASE</thymeleaf-springsecurity.version>
 		<spring-load-balancer.version>3.0.3</spring-load-balancer.version>
 		<postgresql.version>42.2.23</postgresql.version>
 		<kafka-streams.version>3.0.0</kafka-streams.version>
 		<kafka-streams-avro-serde.version>6.2.0</kafka-streams-avro-serde.version>
+		<circutebreaker-resilience4j>2.0.2</circutebreaker-resilience4j>
+		<micrometer-prometheus.version>1.7.4</micrometer-prometheus.version>
+		<logstash-logback.version>6.6</logstash-logback.version>
 	</properties>
 
 	<repositories>
@@ -72,6 +78,13 @@
 			<url>https://packages.confluent.io/maven/</url>
 		</repository>
 	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+		</dependency>
+	</dependencies>
 
 	<dependencyManagement>
 		<dependencies>
@@ -155,6 +168,12 @@
 			</dependency>
 
 			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>mdc-interceptor</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter</artifactId>
 				<version>${spring-boot.version}</version>
@@ -221,7 +240,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-bootstrap</artifactId>
-				<version>3.0.3</version>
+				<version>${spring-cloud-config}</version>
 			</dependency>
 
 			<dependency>
@@ -301,6 +320,48 @@
 				<groupId>org.apache.kafka</groupId>
 				<artifactId>kafka-clients</artifactId>
 				<version>${kafka-streams.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+				<version>${spring-cloud-config}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+				<version>${spring-cloud-config}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-gateway</artifactId>
+				<version>${spring-cloud-config}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-redis</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-circuitbreaker-reactor-resilience4j</artifactId>
+				<version>${circutebreaker-resilience4j}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.micrometer</groupId>
+				<artifactId>micrometer-registry-prometheus</artifactId>
+				<version>${micrometer-prometheus.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>net.logstash.logback</groupId>
+				<artifactId>logstash-logback-encoder</artifactId>
+				<version>${logstash-logback.version}</version>
 			</dependency>
 
 			<dependency>

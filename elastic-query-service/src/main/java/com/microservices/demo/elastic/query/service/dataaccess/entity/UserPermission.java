@@ -7,8 +7,8 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import java.util.UUID;
 
-@Data
 @Entity
+@Data
 public class UserPermission {
 
     @NotNull
@@ -23,6 +23,4 @@ public class UserPermission {
 
     @NotNull
     private String permissionType;
-
-
 }

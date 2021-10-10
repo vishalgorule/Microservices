@@ -15,17 +15,16 @@ public class TwitterQueryUserService implements QueryUserService {
 
     private static final Logger LOG = LoggerFactory.getLogger(TwitterQueryUserService.class);
 
+
     private final UserPermissionRepository userPermissionRepository;
 
-    public TwitterQueryUserService(UserPermissionRepository userPermissionRepository) {
-        this.userPermissionRepository = userPermissionRepository;
+    public TwitterQueryUserService(UserPermissionRepository permissionRepository) {
+        this.userPermissionRepository = permissionRepository;
     }
 
     @Override
     public Optional<List<UserPermission>> findAllPermissionsByUsername(String username) {
         LOG.info("Finding permissions by username {}", username);
-        LOG.info("userPermissionRepository.findPermissionsByUsername(username)::" +userPermissionRepository.findPermissionsByUsername(username).isEmpty());
         return userPermissionRepository.findPermissionsByUsername(username);
     }
-
 }

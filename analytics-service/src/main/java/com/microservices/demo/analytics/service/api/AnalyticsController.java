@@ -14,6 +14,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotEmpty;
+import java.util.Locale;
 import java.util.Optional;
 
 @PreAuthorize("isAuthenticated()")
@@ -40,9 +41,10 @@ public class AnalyticsController {
             @ApiResponse(responseCode = "500", description = "Unexpected error.")})
     public @ResponseBody
     ResponseEntity<AnalyticsResponseModel> getWordCountByWord(@PathVariable @NotEmpty String word) {
-        Optional<AnalyticsResponseModel> response = analyticsService.getWordAnalytics(word);
+        Optional<AnalyticsResponseModel> response = analyticsService.getWordAnalytics(word.toLowerCase());
         if (response.isPresent()) {
             LOG.info("Analytics data returned with id {}", response.get().getId());
+            LOG.info("Analytics data count returned with id {}", response.get().getWordCount());
             return ResponseEntity.ok(response.get());
         }
         return ResponseEntity.ok(AnalyticsResponseModel.builder().build());

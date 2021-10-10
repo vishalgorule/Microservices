@@ -10,8 +10,11 @@ import com.microservices.demo.elastic.query.service.common.model.ElasticQuerySer
 import com.microservices.demo.elastic.query.service.model.ElasticQueryServiceAnalyticsResponseModel;
 import com.microservices.demo.elastic.query.service.model.ElasticQueryServiceWordCountResponseModel;
 import com.microservices.demo.elastic.query.service.model.assembler.ElasticQueryServiceResponseModelAssembler;
+import com.microservices.demo.mdc.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -28,16 +31,22 @@ public class TwitterElasticQueryService implements ElasticQueryService {
     private static final Logger LOG = LoggerFactory.getLogger(TwitterElasticQueryService.class);
 
     private final ElasticQueryServiceResponseModelAssembler elasticQueryServiceResponseModelAssembler;
+
     private final ElasticQueryClient<TwitterIndexModel> elasticQueryClient;
+
     private final ElasticQueryServiceConfigData elasticQueryServiceConfigData;
+
     private final WebClient.Builder webClientBuilder;
 
-    public TwitterElasticQueryService(ElasticQueryServiceResponseModelAssembler elasticQueryServiceResponseModelAssembler,
-                                      ElasticQueryClient<TwitterIndexModel> elasticQueryClient, ElasticQueryServiceConfigData elasticQueryServiceConfigData, WebClient.Builder webClientBuilder) {
-        this.elasticQueryServiceResponseModelAssembler = elasticQueryServiceResponseModelAssembler;
-        this.elasticQueryClient = elasticQueryClient;
-        this.elasticQueryServiceConfigData = elasticQueryServiceConfigData;
-        this.webClientBuilder = webClientBuilder;
+    public TwitterElasticQueryService(ElasticQueryServiceResponseModelAssembler assembler,
+                                      ElasticQueryClient<TwitterIndexModel> queryClient,
+                                      ElasticQueryServiceConfigData queryServiceConfigData,
+                                      @Qualifier("webClientBuilder")
+                                              WebClient.Builder clientBuilder) {
+        this.elasticQueryServiceResponseModelAssembler = assembler;
+        this.elasticQueryClient = queryClient;
+        this.elasticQueryServiceConfigData = queryServiceConfigData;
+        this.webClientBuilder = clientBuilder;
     }
 
     @Override
@@ -47,34 +56,48 @@ public class TwitterElasticQueryService implements ElasticQueryService {
     }
 
     @Override
-    public ElasticQueryServiceAnalyticsResponseModel getDocumentsByText(String text, String tokenAccess) {
+    public ElasticQueryServiceAnalyticsResponseModel getDocumentByText(String text, String accessToken) {
         LOG.info("Querying elasticsearch by text {}", text);
-        List<ElasticQueryServiceResponseModel> elasticQueryServiceResponseModelList = elasticQueryServiceResponseModelAssembler.toModels(elasticQueryClient.getIndexModelByText(text));
+        List<ElasticQueryServiceResponseModel> elasticQueryServiceResponseModels =
+                elasticQueryServiceResponseModelAssembler.toModels(elasticQueryClient.getIndexModelByText(text));
+        LOG.info("getWordCount(text, accessToken)" + getWordCount(text, accessToken));
         return ElasticQueryServiceAnalyticsResponseModel.builder()
-                .queryResponseModels(elasticQueryServiceResponseModelList)
-                .wordCount(getWordCount(text, tokenAccess))
+                .queryResponseModels(elasticQueryServiceResponseModels)
+                .wordCount(getWordCount(text, accessToken))
                 .build();
     }
 
     @Override
     public List<ElasticQueryServiceResponseModel> getAllDocuments() {
-        LOG.info("Querying elasticsearch for all docs");
+        LOG.info("Querying all documents in elasticsearch");
         return elasticQueryServiceResponseModelAssembler.toModels(elasticQueryClient.getAllIndexModel());
+    }
+
+    @Override
+    public ElasticQueryServiceAnalyticsResponseModel getDocumentByText2(String text) {
+        LOG.info("Querying all documents in elasticsearch");
+        List<ElasticQueryServiceResponseModel> elasticQueryServiceResponseModels =
+                elasticQueryServiceResponseModelAssembler.toModels(elasticQueryClient.getIndexModelByText(text));
+        return ElasticQueryServiceAnalyticsResponseModel.builder()
+                .queryResponseModels(elasticQueryServiceResponseModels)
+                .wordCount(10L)
+                .build();
     }
 
     private Long getWordCount(String text, String accessToken) {
         if (QueryType.KAFKA_STATE_STORE.getType().equals(elasticQueryServiceConfigData.getWebClient().getQueryType())) {
             return getFromKafkaStateStore(text, accessToken).getWordCount();
-        }else if (QueryType.ANALYTICS_DATABASE.getType().equals(elasticQueryServiceConfigData.getWebClient().getQueryType())) {
-            return getFromAnalyticsDatabase(text, accessToken).getWordCount();
+        } else if (QueryType.ANALYTICS_DATABASE.getType().
+                equals(elasticQueryServiceConfigData.getWebClient().getQueryType())) {
+            return getFromAnayticsDatabase(text, accessToken).getWordCount();
         }
         return 0L;
     }
 
-    private ElasticQueryServiceWordCountResponseModel getFromAnalyticsDatabase(String text, String accessToken) {
-        ElasticQueryServiceConfigData.Query queryFromKafkaStateStore =
+    private ElasticQueryServiceWordCountResponseModel getFromAnayticsDatabase(String text, String accessToken) {
+        ElasticQueryServiceConfigData.Query queryFromAnalyticsDatabase =
                 elasticQueryServiceConfigData.getQueryFromAnalyticsDatabase();
-        return retrieveResponseModel(text, accessToken, queryFromKafkaStateStore);
+        return retrieveResponseModel(text, accessToken, queryFromAnalyticsDatabase);
     }
 
     private ElasticQueryServiceWordCountResponseModel getFromKafkaStateStore(String text, String accessToken) {
@@ -90,7 +113,10 @@ public class TwitterElasticQueryService implements ElasticQueryService {
                 .build()
                 .method(HttpMethod.valueOf(query.getMethod()))
                 .uri(query.getUri(), uriBuilder -> uriBuilder.build(text))
-                .headers(h -> h.setBearerAuth(accessToken))
+                .headers(h -> {
+                    h.setBearerAuth(accessToken);
+                    h.set(Constants.CORRELATION_ID_HEADER, MDC.get(Constants.CORRELATION_ID_KEY));
+                })
                 .accept(MediaType.valueOf(query.getAccept()))
                 .retrieve()
                 .onStatus(
@@ -108,5 +134,4 @@ public class TwitterElasticQueryService implements ElasticQueryService {
                 .block();
 
     }
-
 }

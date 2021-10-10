@@ -8,12 +8,13 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class ElasticQueryWebClientAnalyticsResponseModel {
 
-    private List<ElasticQueryClientResponseModel> queryClientResponseModelList;
-    private String word;
+    private List<ElasticQueryClientResponseModel> queryResponseModels;
+    private Long wordCount;
+    private String fallbackMessage;
 
 }

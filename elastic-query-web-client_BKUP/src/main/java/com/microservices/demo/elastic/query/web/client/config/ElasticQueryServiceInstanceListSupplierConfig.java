@@ -1,6 +1,9 @@
 package com.microservices.demo.elastic.query.web.client.config;
 
 import com.microservices.demo.config.ElasticQueryClientConfigData;
+import com.microservices.demo.elastic.query.web.client.api.QueryController;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.cloud.client.DefaultServiceInstance;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.loadbalancer.core.ServiceInstanceListSupplier;
@@ -15,6 +18,8 @@ import java.util.stream.Collectors;
 @Primary
 public class ElasticQueryServiceInstanceListSupplierConfig implements ServiceInstanceListSupplier {
 
+    private static final Logger LOG = LoggerFactory.getLogger(QueryController.class);
+
     private final ElasticQueryClientConfigData.WebClient webClientConfig;
 
     public ElasticQueryServiceInstanceListSupplierConfig(ElasticQueryClientConfigData webClientConfigData) {
@@ -28,6 +33,7 @@ public class ElasticQueryServiceInstanceListSupplierConfig implements ServiceIns
 
     @Override
     public Flux<List<ServiceInstance>> get() {
+        LOG.info("Instances 1 {}", webClientConfig.getInstances().toArray());
         return Flux.just(
                 webClientConfig.getInstances().stream()
                         .map(instance ->

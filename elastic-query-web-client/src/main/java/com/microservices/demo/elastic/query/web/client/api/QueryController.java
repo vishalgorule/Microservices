@@ -3,7 +3,7 @@ package com.microservices.demo.elastic.query.web.client.api;
 import com.microservices.demo.elastic.query.web.client.common.model.ElasticQueryClientRequestModel;
 import com.microservices.demo.elastic.query.web.client.common.model.ElasticQueryClientResponseModel;
 import com.microservices.demo.elastic.query.web.client.common.model.ElasticQueryWebClientAnalyticsResponseModel;
-import com.microservices.demo.elastic.query.web.client.service.ElasticQueryClient;
+import com.microservices.demo.elastic.query.web.client.service.ElasticQueryWebClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -19,10 +19,10 @@ public class QueryController {
 
     private static final Logger LOG = LoggerFactory.getLogger(QueryController.class);
 
-    private final ElasticQueryClient elasticQueryClient;
+    private final ElasticQueryWebClient elasticQueryWebClient;
 
-    public QueryController(ElasticQueryClient elasticQueryClient) {
-        this.elasticQueryClient = elasticQueryClient;
+    public QueryController(ElasticQueryWebClient webClient) {
+        this.elasticQueryWebClient = webClient;
     }
 
     @GetMapping("")
@@ -46,9 +46,11 @@ public class QueryController {
     public String queryByText(@Valid ElasticQueryClientRequestModel requestModel,
                               Model model) {
         LOG.info("Querying with text {}", requestModel.getText());
-        ElasticQueryWebClientAnalyticsResponseModel responseModels = elasticQueryClient.getDataByText(requestModel);
-        model.addAttribute("elasticQueryWebClientResponseModels", responseModels.getQueryClientResponseModelList());
-        model.addAttribute("wordCount", responseModels.getWord());
+        ElasticQueryWebClientAnalyticsResponseModel responseModel = elasticQueryWebClient.getDataByText(requestModel);
+        model.addAttribute("elasticQueryWebClientResponseModels",
+                responseModel.getQueryResponseModels());
+        model.addAttribute("wordCount", responseModel.getWordCount());
+        model.addAttribute("fallbackMessage", responseModel.getFallbackMessage());
         model.addAttribute("searchText", requestModel.getText());
         model.addAttribute("elasticQueryWebClientRequestModel",
                 ElasticQueryClientRequestModel.builder().build());

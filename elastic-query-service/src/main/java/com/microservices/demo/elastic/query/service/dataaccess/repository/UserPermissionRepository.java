@@ -18,5 +18,4 @@ public interface UserPermissionRepository extends JpaRepository<UserPermission, 
             "and d.id = p.document_id " +
             "and u.username = :username")
     Optional<List<UserPermission>> findPermissionsByUsername(@Param("username") String username);
-
 }

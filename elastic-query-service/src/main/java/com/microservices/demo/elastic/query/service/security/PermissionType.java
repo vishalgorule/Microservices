@@ -6,12 +6,11 @@ public enum PermissionType {
 
     private String type;
 
-    PermissionType(String type){
+    PermissionType(String type) {
         this.type = type;
     }
 
-    public String getType(){
+    public String getType() {
         return this.type;
     }
-
 }

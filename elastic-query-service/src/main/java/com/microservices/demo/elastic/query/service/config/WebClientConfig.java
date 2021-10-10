@@ -1,6 +1,5 @@
 package com.microservices.demo.elastic.query.service.config;
 
-import com.microservices.demo.config.ElasticQueryClientConfigData;
 import com.microservices.demo.config.ElasticQueryServiceConfigData;
 import io.netty.channel.ChannelOption;
 import io.netty.handler.timeout.ReadTimeoutHandler;
@@ -10,9 +9,6 @@ import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
-import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
-import org.springframework.security.oauth2.client.web.OAuth2AuthorizedClientRepository;
-import org.springframework.security.oauth2.client.web.reactive.function.client.ServletOAuth2AuthorizedClientExchangeFilterFunction;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.netty.http.client.HttpClient;
 import reactor.netty.tcp.TcpClient;
@@ -24,15 +20,13 @@ public class WebClientConfig {
 
     private final ElasticQueryServiceConfigData.WebClient elasticQueryServiceConfigData;
 
-    public WebClientConfig(ElasticQueryServiceConfigData elasticQueryServiceConfigData) {
-        this.elasticQueryServiceConfigData = elasticQueryServiceConfigData.getWebClient();
+    public WebClientConfig(ElasticQueryServiceConfigData queryServiceConfigData) {
+        this.elasticQueryServiceConfigData = queryServiceConfigData.getWebClient();
     }
 
     @LoadBalanced
-    @Bean("webClientBuilder")
-    WebClient.Builder webClientBuilder(ClientRegistrationRepository clientRegistrationRepository,
-            OAuth2AuthorizedClientRepository oAuth2AuthorizedClientRepository)
-    {
+    @Bean
+    WebClient.Builder webClientBuilder() {
         return WebClient.builder()
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, elasticQueryServiceConfigData.getContentType())
                 .defaultHeader(HttpHeaders.ACCEPT, elasticQueryServiceConfigData.getAcceptType())

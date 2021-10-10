@@ -15,5 +15,7 @@ spring:
     user:
       name: spring_cloud_user
       password: '{cipher}ceed0d59798179b6899fa192ff07c66d4982d5259d03327107069112bc39fbdc'
-
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

@@ -15,16 +15,16 @@ import org.apache.avro.message.SchemaStore;
 @org.apache.avro.specific.AvroGenerated
 public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -3147340086224479915L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TwitterAnalyticsAvroModel\",\"namespace\":\"com.microservices.demo.kafka.avro.model\",\"fields\":[{\"name\":\"word\",\"type\":[\"null\",\"string\"]},{\"name\":\"wordCount\",\"type\":[\"null\",\"long\"]},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"logicalType\":[\"null\",\"date\"]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TwitterAnalyticsAvroModel\",\"namespace\":\"com.microservices.demo.kafka.avro.model\",\"fields\":[{\"name\":\"word\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"wordCount\",\"type\":[\"null\",\"long\"]},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"logicalType\":[\"null\",\"date\"]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
 
   private static final BinaryMessageEncoder<TwitterAnalyticsAvroModel> ENCODER =
-      new BinaryMessageEncoder<TwitterAnalyticsAvroModel>(MODEL$, SCHEMA$);
+          new BinaryMessageEncoder<TwitterAnalyticsAvroModel>(MODEL$, SCHEMA$);
 
   private static final BinaryMessageDecoder<TwitterAnalyticsAvroModel> DECODER =
-      new BinaryMessageDecoder<TwitterAnalyticsAvroModel>(MODEL$, SCHEMA$);
+          new BinaryMessageDecoder<TwitterAnalyticsAvroModel>(MODEL$, SCHEMA$);
 
   /**
    * Return the BinaryMessageEncoder instance used by this class.
@@ -67,13 +67,13 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
    * @throws java.io.IOException if the given bytes could not be deserialized into an instance of this class
    */
   public static TwitterAnalyticsAvroModel fromByteBuffer(
-      java.nio.ByteBuffer b) throws java.io.IOException {
+          java.nio.ByteBuffer b) throws java.io.IOException {
     return DECODER.decode(b);
   }
 
-   private java.lang.CharSequence word;
-   private java.lang.Long wordCount;
-   private java.lang.Long createdAt;
+  private java.lang.String word;
+  private java.lang.Long wordCount;
+  private java.lang.Long createdAt;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -88,7 +88,7 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
    * @param wordCount The new value for wordCount
    * @param createdAt The new value for createdAt
    */
-  public TwitterAnalyticsAvroModel(java.lang.CharSequence word, java.lang.Long wordCount, java.lang.Long createdAt) {
+  public TwitterAnalyticsAvroModel(java.lang.String word, java.lang.Long wordCount, java.lang.Long createdAt) {
     this.word = word;
     this.wordCount = wordCount;
     this.createdAt = createdAt;
@@ -99,10 +99,10 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
     switch (field$) {
-    case 0: return word;
-    case 1: return wordCount;
-    case 2: return createdAt;
-    default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
+      case 0: return word;
+      case 1: return wordCount;
+      case 2: return createdAt;
+      default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
 
@@ -110,10 +110,10 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: word = (java.lang.CharSequence)value$; break;
-    case 1: wordCount = (java.lang.Long)value$; break;
-    case 2: createdAt = (java.lang.Long)value$; break;
-    default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
+      case 0: word = value$ != null ? value$.toString() : null; break;
+      case 1: wordCount = (java.lang.Long)value$; break;
+      case 2: createdAt = (java.lang.Long)value$; break;
+      default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
 
@@ -121,7 +121,7 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
    * Gets the value of the 'word' field.
    * @return The value of the 'word' field.
    */
-  public java.lang.CharSequence getWord() {
+  public java.lang.String getWord() {
     return word;
   }
 
@@ -130,7 +130,7 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
    * Sets the value of the 'word' field.
    * @param value the value to set.
    */
-  public void setWord(java.lang.CharSequence value) {
+  public void setWord(java.lang.String value) {
     this.word = value;
   }
 
@@ -207,9 +207,9 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
    */
   @org.apache.avro.specific.AvroGenerated
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<TwitterAnalyticsAvroModel>
-    implements org.apache.avro.data.RecordBuilder<TwitterAnalyticsAvroModel> {
+          implements org.apache.avro.data.RecordBuilder<TwitterAnalyticsAvroModel> {
 
-    private java.lang.CharSequence word;
+    private java.lang.String word;
     private java.lang.Long wordCount;
     private java.lang.Long createdAt;
 
@@ -259,20 +259,20 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
     }
 
     /**
-      * Gets the value of the 'word' field.
-      * @return The value.
-      */
-    public java.lang.CharSequence getWord() {
+     * Gets the value of the 'word' field.
+     * @return The value.
+     */
+    public java.lang.String getWord() {
       return word;
     }
 
 
     /**
-      * Sets the value of the 'word' field.
-      * @param value The value of 'word'.
-      * @return This builder.
-      */
-    public com.microservices.demo.kafka.avro.model.TwitterAnalyticsAvroModel.Builder setWord(java.lang.CharSequence value) {
+     * Sets the value of the 'word' field.
+     * @param value The value of 'word'.
+     * @return This builder.
+     */
+    public com.microservices.demo.kafka.avro.model.TwitterAnalyticsAvroModel.Builder setWord(java.lang.String value) {
       validate(fields()[0], value);
       this.word = value;
       fieldSetFlags()[0] = true;
@@ -280,18 +280,18 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
     }
 
     /**
-      * Checks whether the 'word' field has been set.
-      * @return True if the 'word' field has been set, false otherwise.
-      */
+     * Checks whether the 'word' field has been set.
+     * @return True if the 'word' field has been set, false otherwise.
+     */
     public boolean hasWord() {
       return fieldSetFlags()[0];
     }
 
 
     /**
-      * Clears the value of the 'word' field.
-      * @return This builder.
-      */
+     * Clears the value of the 'word' field.
+     * @return This builder.
+     */
     public com.microservices.demo.kafka.avro.model.TwitterAnalyticsAvroModel.Builder clearWord() {
       word = null;
       fieldSetFlags()[0] = false;
@@ -299,19 +299,19 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
     }
 
     /**
-      * Gets the value of the 'wordCount' field.
-      * @return The value.
-      */
+     * Gets the value of the 'wordCount' field.
+     * @return The value.
+     */
     public java.lang.Long getWordCount() {
       return wordCount;
     }
 
 
     /**
-      * Sets the value of the 'wordCount' field.
-      * @param value The value of 'wordCount'.
-      * @return This builder.
-      */
+     * Sets the value of the 'wordCount' field.
+     * @param value The value of 'wordCount'.
+     * @return This builder.
+     */
     public com.microservices.demo.kafka.avro.model.TwitterAnalyticsAvroModel.Builder setWordCount(java.lang.Long value) {
       validate(fields()[1], value);
       this.wordCount = value;
@@ -320,18 +320,18 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
     }
 
     /**
-      * Checks whether the 'wordCount' field has been set.
-      * @return True if the 'wordCount' field has been set, false otherwise.
-      */
+     * Checks whether the 'wordCount' field has been set.
+     * @return True if the 'wordCount' field has been set, false otherwise.
+     */
     public boolean hasWordCount() {
       return fieldSetFlags()[1];
     }
 
 
     /**
-      * Clears the value of the 'wordCount' field.
-      * @return This builder.
-      */
+     * Clears the value of the 'wordCount' field.
+     * @return This builder.
+     */
     public com.microservices.demo.kafka.avro.model.TwitterAnalyticsAvroModel.Builder clearWordCount() {
       wordCount = null;
       fieldSetFlags()[1] = false;
@@ -339,19 +339,19 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
     }
 
     /**
-      * Gets the value of the 'createdAt' field.
-      * @return The value.
-      */
+     * Gets the value of the 'createdAt' field.
+     * @return The value.
+     */
     public java.lang.Long getCreatedAt() {
       return createdAt;
     }
 
 
     /**
-      * Sets the value of the 'createdAt' field.
-      * @param value The value of 'createdAt'.
-      * @return This builder.
-      */
+     * Sets the value of the 'createdAt' field.
+     * @param value The value of 'createdAt'.
+     * @return This builder.
+     */
     public com.microservices.demo.kafka.avro.model.TwitterAnalyticsAvroModel.Builder setCreatedAt(java.lang.Long value) {
       validate(fields()[2], value);
       this.createdAt = value;
@@ -360,18 +360,18 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
     }
 
     /**
-      * Checks whether the 'createdAt' field has been set.
-      * @return True if the 'createdAt' field has been set, false otherwise.
-      */
+     * Checks whether the 'createdAt' field has been set.
+     * @return True if the 'createdAt' field has been set, false otherwise.
+     */
     public boolean hasCreatedAt() {
       return fieldSetFlags()[2];
     }
 
 
     /**
-      * Clears the value of the 'createdAt' field.
-      * @return This builder.
-      */
+     * Clears the value of the 'createdAt' field.
+     * @return This builder.
+     */
     public com.microservices.demo.kafka.avro.model.TwitterAnalyticsAvroModel.Builder clearCreatedAt() {
       createdAt = null;
       fieldSetFlags()[2] = false;
@@ -383,7 +383,7 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
     public TwitterAnalyticsAvroModel build() {
       try {
         TwitterAnalyticsAvroModel record = new TwitterAnalyticsAvroModel();
-        record.word = fieldSetFlags()[0] ? this.word : (java.lang.CharSequence) defaultValue(fields()[0]);
+        record.word = fieldSetFlags()[0] ? this.word : (java.lang.String) defaultValue(fields()[0]);
         record.wordCount = fieldSetFlags()[1] ? this.wordCount : (java.lang.Long) defaultValue(fields()[1]);
         record.createdAt = fieldSetFlags()[2] ? this.createdAt : (java.lang.Long) defaultValue(fields()[2]);
         return record;
@@ -397,26 +397,26 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
 
   @SuppressWarnings("unchecked")
   private static final org.apache.avro.io.DatumWriter<TwitterAnalyticsAvroModel>
-    WRITER$ = (org.apache.avro.io.DatumWriter<TwitterAnalyticsAvroModel>)MODEL$.createDatumWriter(SCHEMA$);
+          WRITER$ = (org.apache.avro.io.DatumWriter<TwitterAnalyticsAvroModel>)MODEL$.createDatumWriter(SCHEMA$);
 
   @Override public void writeExternal(java.io.ObjectOutput out)
-    throws java.io.IOException {
+          throws java.io.IOException {
     WRITER$.write(this, SpecificData.getEncoder(out));
   }
 
   @SuppressWarnings("unchecked")
   private static final org.apache.avro.io.DatumReader<TwitterAnalyticsAvroModel>
-    READER$ = (org.apache.avro.io.DatumReader<TwitterAnalyticsAvroModel>)MODEL$.createDatumReader(SCHEMA$);
+          READER$ = (org.apache.avro.io.DatumReader<TwitterAnalyticsAvroModel>)MODEL$.createDatumReader(SCHEMA$);
 
   @Override public void readExternal(java.io.ObjectInput in)
-    throws java.io.IOException {
+          throws java.io.IOException {
     READER$.read(this, SpecificData.getDecoder(in));
   }
 
   @Override protected boolean hasCustomCoders() { return true; }
 
   @Override public void customEncode(org.apache.avro.io.Encoder out)
-    throws java.io.IOException
+          throws java.io.IOException
   {
     if (this.word == null) {
       out.writeIndex(0);
@@ -445,7 +445,7 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
   }
 
   @Override public void customDecode(org.apache.avro.io.ResolvingDecoder in)
-    throws java.io.IOException
+          throws java.io.IOException
   {
     org.apache.avro.Schema.Field[] fieldOrder = in.readFieldOrderIfDiff();
     if (fieldOrder == null) {
@@ -453,7 +453,7 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
         in.readNull();
         this.word = null;
       } else {
-        this.word = in.readString(this.word instanceof Utf8 ? (Utf8)this.word : null);
+        this.word = in.readString();
       }
 
       if (in.readIndex() != 1) {
@@ -473,41 +473,40 @@ public class TwitterAnalyticsAvroModel extends org.apache.avro.specific.Specific
     } else {
       for (int i = 0; i < 3; i++) {
         switch (fieldOrder[i].pos()) {
-        case 0:
-          if (in.readIndex() != 1) {
-            in.readNull();
-            this.word = null;
-          } else {
-            this.word = in.readString(this.word instanceof Utf8 ? (Utf8)this.word : null);
-          }
-          break;
+          case 0:
+            if (in.readIndex() != 1) {
+              in.readNull();
+              this.word = null;
+            } else {
+              this.word = in.readString();
+            }
+            break;
 
-        case 1:
-          if (in.readIndex() != 1) {
-            in.readNull();
-            this.wordCount = null;
-          } else {
-            this.wordCount = in.readLong();
-          }
-          break;
+          case 1:
+            if (in.readIndex() != 1) {
+              in.readNull();
+              this.wordCount = null;
+            } else {
+              this.wordCount = in.readLong();
+            }
+            break;
 
-        case 2:
-          if (in.readIndex() != 1) {
-            in.readNull();
-            this.createdAt = null;
-          } else {
-            this.createdAt = in.readLong();
-          }
-          break;
+          case 2:
+            if (in.readIndex() != 1) {
+              in.readNull();
+              this.createdAt = null;
+            } else {
+              this.createdAt = in.readLong();
+            }
+            break;
 
-        default:
-          throw new java.io.IOException("Corrupt ResolvingDecoder.");
+          default:
+            throw new java.io.IOException("Corrupt ResolvingDecoder.");
         }
       }
     }
   }
 }
-
 
 
 

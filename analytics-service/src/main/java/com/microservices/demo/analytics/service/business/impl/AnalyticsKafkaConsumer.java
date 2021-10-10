@@ -50,9 +50,9 @@ public class AnalyticsKafkaConsumer implements KafkaConsumer<TwitterAnalyticsAvr
 
     @EventListener
     public void onAppStarted(ApplicationStartedEvent event) {
-        kafkaAdminClient.checkTopicCreated();
-        LOG.info("Topics with name {} is ready for operations!", kafkaConfig.getTopicNamesToCreate().toArray());
-        kafkaListenerEndpointRegistry.getListenerContainer("twitterAnalyticsTopicListener").start();
+//        kafkaAdminClient.checkTopicCreated();
+//        LOG.info("Topics with name {} is ready for operations!", kafkaConfig.getTopicNamesToCreate().toArray());
+//        kafkaListenerEndpointRegistry.getListenerContainer("twitterAnalyticsTopicListener").start();
     }
 
     @Override

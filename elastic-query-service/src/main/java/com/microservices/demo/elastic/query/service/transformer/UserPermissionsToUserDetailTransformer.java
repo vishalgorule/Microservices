@@ -11,14 +11,13 @@ import java.util.stream.Collectors;
 @Component
 public class UserPermissionsToUserDetailTransformer {
 
-    public TwitterQueryUser getUserDetails(List<UserPermission> userPermissions){
+    public TwitterQueryUser getUserDetails(List<UserPermission> userPermissions) {
         return TwitterQueryUser.builder()
                 .username(userPermissions.get(0).getUsername())
                 .permissions(userPermissions.stream()
                         .collect(Collectors.toMap(
-                           UserPermission::getDocumentId,
+                                UserPermission::getDocumentId,
                                 permission -> PermissionType.valueOf(permission.getPermissionType()))))
                 .build();
     }
-
 }

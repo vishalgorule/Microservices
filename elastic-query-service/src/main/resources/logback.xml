@@ -4,5 +4,4 @@
     <property name="APP_NAME" value="elastic-query-service"/>
 
     <include resource="logback-common.xml"/>
-
 </configuration>

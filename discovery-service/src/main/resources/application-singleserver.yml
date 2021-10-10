@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    appname: service-registry-cluster
+  server:
+    enable-self-preservation: false
+    expected-client-renewal-interval-seconds: 3
+    eviction-interval-timer-in-ms: 2000
